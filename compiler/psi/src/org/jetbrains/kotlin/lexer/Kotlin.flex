@@ -64,9 +64,6 @@ import org.jetbrains.kotlin.lexer.KtTokens;
 
 %function advance
 %type IElementType
-%eof{
-  return;
-%eof}
 
 %xstate STRING RAW_STRING SHORT_TEMPLATE_ENTRY BLOCK_COMMENT DOC_COMMENT
 %state LONG_TEMPLATE_ENTRY UNMATCHED_BACKTICK
